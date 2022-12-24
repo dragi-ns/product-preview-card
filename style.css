@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3eae3;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  font: inherit;
+}
+
+.product-card {
+  max-width: 350px;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.product-card img {
+  object-fit: cover;
+}
+
+.product-card-right {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  color: #70768f;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-title {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #21252e;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #70768f;
+  line-height: 1.5rem;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-price .new-price {
+  font-family: 'Fraunces', serif;
+  font-size: 2.2rem;
+  color: #3d8168;
+}
+
+.product-price .old-price {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: #70768f;
+}
+
+.product-card .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #3d8168;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.product-card .btn:hover,
+.product-card .btn:focus {
+  background-color: #1a4031;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    justify-content: center;
+  }
+
+  .product-card {
+    max-width: 600px;
+    display: flex;
+  }
+
+  .product-card-left,
+  .product-card-right {
+    flex-basis: 50%;
+  }
+
+  .product-card-right {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .product-category {
+    margin-bottom: 1.25rem;
+  }
+}
+
+footer {
+  padding: 1rem;
+}
+
+footer .attribution {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #70768f;
+}
